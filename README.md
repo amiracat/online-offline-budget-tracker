@@ -1,1 +1,1 @@
-# online-offline-budget-tracker
+# Online-Offline Budget Tracker

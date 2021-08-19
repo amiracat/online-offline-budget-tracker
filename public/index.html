@@ -45,3 +45,13 @@
   <script src="index.js"></script>
 </body>
 </html>
+<!-- script added from activity 16 NoSql unit fyi -->
+<script>
+  // We request a database instance. first is name of DB, 2nd is version
+  const request = indexedDB.open("firstDatabase", 1);
+  
+  // This returns a result that we can then manipulate.
+  request.onsuccess = event => {
+    console.log(request.result);
+  };
+</script>
