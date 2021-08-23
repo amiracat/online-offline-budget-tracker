@@ -60,7 +60,12 @@
   // We request a database instance. first is name of DB, 2nd is version
   const request = indexedDB.open("firstDatabase", 1);
   
-  // This returns a result that we can then manipulate.
+  request.onupgradeneeded = ({ target }) => {
+    const db = target.result;
+    const objectStore = db.createObjectStore("firstDatabase");
+  };
+
+  // on success, console the result
   request.onsuccess = event => {
     console.log(request.result);
   };
