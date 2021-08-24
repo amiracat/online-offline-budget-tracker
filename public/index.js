@@ -145,11 +145,11 @@ function sendTransaction(isAdding) {
 }
 
 document.querySelector("#add-btn").onclick = function(event) {
-  event.preventDefault();
+  // event.preventDefault();
   sendTransaction(true);
 };
 
 document.querySelector("#sub-btn").onclick = function(event) {
-  event.preventDefault();
+  // event.preventDefault();
   sendTransaction(false);
 };
