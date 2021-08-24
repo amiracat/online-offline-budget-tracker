@@ -1,6 +1,16 @@
 let db;
 let budgetVersion;
 
+// import useIndexedDb from "./indexedDb.js";
+
+const indexedDB =
+  window.indexedDB ||
+  window.mozIndexedDB ||
+  window.webkitIndexedDB ||
+  window.msIndexedDB ||
+  window.shimIndexedDB;
+
+
 // Create a new db request for a "budget" database.
 const request = indexedDB.open('BudgetDB', budgetVersion || 21);
 

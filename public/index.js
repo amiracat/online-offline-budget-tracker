@@ -1,6 +1,8 @@
 let transactions = [];
 let myChart;
 
+// import db from "db.js";
+
 fetch("/api/transaction")
   .then(response => {
     return response.json();
