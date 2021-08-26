@@ -2,7 +2,6 @@ console.log("Helloooo from your service-worker.js file.");
 
 // see activity 12
 
-
 const FILES_TO_CACHE = [
     "/",
     "/index.html",
